@@ -1,0 +1,2 @@
+# Simple Minesweeper
+A simple Minesweeper clone for the browser using HTML, CSS & vanilla JavaScript. Created for fun and as an example to students demonstrating first class functions, state, event handlers and DOM manipulation.

@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin:10px;
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button {
+  border-radius: 5px;
+  padding:10px;
+  margin:10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: lightgray;
+}
+
+.prompt {
+  font-size:1rem;
+  padding:5px;
+  text-align: center;
+  margin-bottom:5px;
+}
+
+.board {
+  display: grid;
+  gap:2px;
+}
+
+.cell {
+  background-color: darkgray;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 50px;
+  font-size:1.5rem;
+  font-weight:bold;
+}
+
+.playing .cell:hover {
+  background-color: dimgray;
+  cursor: pointer;
+}
+
+.cell.cleared,
+.cell.cleared:hover {
+  background-color: lightgray;
+  cursor: default;
+}
+
+.cell.mine {
+  background-color: red;
+}
+
+.won .cell.mine {
+  background-color: green;
+}
